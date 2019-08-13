@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+articles = []
+10.times do |t|
+  articles << Article.create(title: "Article #{t}", content: "Text #{t}")
+end
